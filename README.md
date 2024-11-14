@@ -28,7 +28,7 @@ Follow these steps to get the project up and running on your local machine.
 
 Make sure you have Python and pip installed. Then, install the required Python packages:
  ```bash
-**pip install Flask**
+pip install Flask
 
 
 
