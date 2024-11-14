@@ -60,11 +60,11 @@ This will start the Flask development server, and the application will be access
 
                                                                                                                             
 ## Contributing
-1.Fork the repository.
-2.Create your branch (git checkout -b feature-name).
-3.Commit your changes (git commit -am 'Add new feature').
-4Push to the branch (git push origin feature-name).
-5.Create a new Pull Request.
+1. - **Fork the repository**.
+2. - **Create your branch (git checkout -b feature-name)**.
+3.-  **Commit your changes (git commit -am 'Add new feature')**.
+4. - **Push to the branch (git push origin feature-name)**.
+5. - **Create a new Pull Request**.
 
 
 Contact
