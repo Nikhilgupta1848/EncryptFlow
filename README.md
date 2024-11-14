@@ -28,7 +28,7 @@ Follow these steps to get the project up and running on your local machine.
 
 Make sure you have Python and pip installed. Then, install the required Python packages:
 
-pip install Flask
+-**pip install Flask**
 
 This will install Flask, the main framework for the backend of this project.
 
@@ -38,7 +38,9 @@ This will install Flask, the main framework for the backend of this project.
 
 To run the Flask server, use the following command:
 
-python app.py
+-**python app.py**
+
+
 This will start the Flask development server, and the application will be accessible at http://127.0.0.1:5000/ in your browser.
 
 4. **How It Works** :
