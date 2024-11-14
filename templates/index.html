@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="digital-rain">
-        <!-- Lines generated dynamically by JS -->
+        <!-- Digital rain effect -->
     </div>
     
     <div class="container">
@@ -20,7 +20,7 @@
             <input type="text" id="message" name="message" placeholder="Type your secret message...">
             
             <label for="shift">Enter Shift:</label>
-            <input type="number" id="shift" name="shift" placeholder="Shift value" min="1" max="25">
+            <input type="number" id="shift" name="shift" placeholder="Shift value" min="1" max="255">
             
             <button onclick="sendMessage()">Send Message</button>
             <button onclick="receiveMessage()">Receive Message</button>
@@ -32,19 +32,7 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const digitalRain = document.querySelector('.digital-rain');
-            for (let i = 0; i < 50; i++) {
-                let line = document.createElement('div');
-                line.style.left = `${Math.random() * 100}vw`;
-                line.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random fall speed
-                digitalRain.appendChild(line);
-            }
-        });
-    </script>
-    
-
-    <script>
+        // JavaScript to handle message sending and receiving
         async function sendMessage() {
             const message = document.getElementById("message").value;
             const shift = document.getElementById("shift").value;
@@ -72,6 +60,16 @@
                 document.getElementById("status").textContent = "Queue is empty.";
             }
         }
+
+        // Generate digital rain effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const digitalRain = document.querySelector('.digital-rain');
+            for (let i = 0; i < 50; i++) {
+                const line = document.createElement('div');
+                line.className = 'rain-line';
+                digitalRain.appendChild(line);
+            }
+        });
     </script>
 </body>
 </html>
