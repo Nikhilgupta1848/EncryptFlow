@@ -127,7 +127,16 @@ button:hover {
     }
 }
 
-/* Digital Rain - Binary Effect */
+/* Extra Styling for Cybersecurity Visuals (Optional) */
+@keyframes digitalRain {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
 .digital-rain {
     position: absolute;
     top: 0;
@@ -136,14 +145,14 @@ button:hover {
     height: 100%;
     pointer-events: none;
     z-index: -2;
+    animation: digitalRain 1.5s linear infinite;
 }
 
-.rain-line {
+.digital-rain div {
     position: absolute;
-    font-family: monospace;
-    color: rgba(0, 153, 255, 0.8); /* Blue color for digital rain */
-    font-size: 20px;
-    white-space: nowrap;
+    background: rgba(0, 255, 0, 0.8);
+    height: 20px;
+    width: 10px;
     animation: fall 1s linear infinite;
 }
 
